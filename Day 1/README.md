@@ -100,6 +100,12 @@ The project performs exploratory analysis using:
 - Correlation heatmap
 - Relationships between features and student outcomes
 
+### Distribution of Numerical Features
+
+The distributions of the main numerical features were visualized using histograms.
+
+![Distribution of Numerical Features](screenshots/eda.png)
+
 ### Key Observations
 
 - The target variable is balanced, with 5,000 students marked as Pass and 5,000 marked as Fail.
@@ -163,6 +169,8 @@ The models were evaluated using:
 
 Based on the evaluation results, Logistic Regression achieved higher accuracy, precision, recall, and F1 score than KNN on the test dataset.
 
+![Final Model Selection](screenshots/model_results.png)
+
 Therefore, Logistic Regression was selected as the final model for the student prediction system.
 
 Logistic Regression achieved an accuracy of 62.90%, while KNN achieved an accuracy of 60.15%.
@@ -204,16 +212,15 @@ Output:
 Prediction: Pass
 ```
 
+![Final Student Prediction](screenshots/prediction.png)
+
 ## Screenshots
 
-Important screenshots from the project are included in the `screenshots` folder.
+The project screenshots are included in the `screenshots` folder:
 
-Suggested screenshots:
-
-- Dataset and preprocessing
-- Exploratory Data Analysis
-- Model evaluation
-- Final prediction
+- `eda.png` — Distribution of numerical features
+- `model_results.png` — Final model selection
+- `prediction.png` — Final student prediction
 
 ## Limitations
 
@@ -245,13 +252,12 @@ The system can be improved in the future by:
 student-performance-prediction/
 │
 ├── datasets/
-│   └── student_performance_data.csv
+│   └── student_performance.csv
 │
 ├── notebook/
 │   └── student_performance_prediction.ipynb
 │
 ├── screenshots/
-│   ├── dataset.png
 │   ├── eda.png
 │   ├── model_results.png
 │   └── prediction.png
@@ -282,7 +288,7 @@ scikit-learn
 
 ## Video Demonstration
 
-_Add your Google Drive or YouTube Unlisted video link here._
+*Add your Google Drive or YouTube Unlisted video link here.*
 
 The video demonstrates:
 
@@ -290,7 +296,6 @@ The video demonstrates:
 - Problem statement
 - Data preprocessing
 - Exploratory Data Analysis
-- Feature selection
 - Model development
 - Model evaluation
 - Model comparison
